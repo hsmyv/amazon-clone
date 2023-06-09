@@ -87,8 +87,8 @@ import TextInput from '@/Components/TextInput.vue';
 
 const form = useForm({
     country: 'United Kingdom',
-    first_name: usePage().props.value.auth.user.first_name,
-    last_name: usePage().props.value.auth.user.last_name,
+    first_name: usePage().props.auth.first_name,
+    last_name: usePage().props.auth.last_name,
     addr1: '',
     addr2: '',
     city: '',

@@ -5,6 +5,8 @@ import { toRefs, computed } from 'vue'
 import MapMarkerOutlineIcon from 'vue-material-design-icons/MapMarkerOutline.vue'
 
 
+import {useCartStore} from '@/store/cart'
+import {storeToRefs} from 'pinia';
 
 const cartStore = useCartStore()
 const { cart } = storeToRefs(cartStore)
@@ -24,7 +26,7 @@ const isAlreadyInCart = computed(() => {
 </script>
 
 <template>
-    <Head title="Product" />
+    <Head title="Product"/>
 
     <AuthenticatedLayout>
         <div class="mt-16"></div>
